@@ -9,17 +9,6 @@ Designed by Taavi Rübenhagen
 
 
 
-'''
-venv/Scripts/activate
-$env:FLASK_ENV = "development"
-python -m flask run --host=0.0.0.0
-'''
-
-
-
-
-
-
 from flask import Flask, request, render_template, jsonify
 import tkinter as tk
 from tkinter import *
