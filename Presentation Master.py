@@ -1,6 +1,6 @@
 '''
 Tavy Presentation Master for Windows
-Version 0.3
+Version 0.4
 Designed by Taavi Rübenhagen
 '''
 
@@ -51,7 +51,6 @@ username = getpass.getuser()
 
 
 def add_to_startup():
-  #file_path = os.path.dirname(os.path.realpath(__file__))
   file_path = r'"C:\Users\%s\Desktop\Presentation Master.py"'  % username
   bat_path = r'C:\Users\%s\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup' % username
   with open(bat_path + '\\' + "open.bat", "w+") as bat_file:
@@ -140,7 +139,7 @@ def presentation():
         link = link.replace("%23", "#")
         link = link.replace("%3D", "=")
         print(link)
-        webbrowser.open_new(link)#"https://docs.google.com/presentation/d/1WjGmtjSILkfaDmJCPrX3vnXV2r8nnJ7-f_Afhmj5AIk/edit#slide=id.p")
+        webbrowser.open_new(link)
         time.sleep(10)
         pyautogui.hotkey("ctrl", "shift", "f5")
       else:
@@ -167,7 +166,7 @@ class ServerThread(threading.Thread):
   def run(self):
 
     if __name__ == '__main__':
-      app.run(host="0.0.0.0")#, debug = True)
+      app.run(host="0.0.0.0")
 
 
 
