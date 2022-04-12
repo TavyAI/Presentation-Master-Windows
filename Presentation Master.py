@@ -13,10 +13,7 @@ from flask import Flask, request, render_template, jsonify
 import tkinter as tk
 from tkinter import *
 
-import threading, os, random, time
-import getpass, webbrowser, pyautogui, pyqrcode
-from subprocess import Popen
-
+import threading, time
 import socket, getpass, webbrowser, pyautogui, pyqrcode
 from subprocess import Popen
 from pynput import keyboard
