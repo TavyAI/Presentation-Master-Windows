@@ -4,7 +4,6 @@ We upload this to show that this app is not harmful, as some antivirus programs 
 
 
 
-## 
 ## What it does
 The app builds a server on your PC which is listening to requests from your mobile device when the connection is established.
 When a request is made, keyboard presses are simulated to control your presentation in the same way you would do it manually. In parallel, a window with a QR code to connect is opened. When you close it, the app will keep running in background.
